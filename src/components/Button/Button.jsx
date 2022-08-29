@@ -2,11 +2,7 @@ import React from "react";
 import classes from "./Button.module.css";
 
 const Button = ({ text }) => {
-  return (
-    <div>
-      <button className={classes.pushButton}>{text}</button>
-    </div>
-  );
+  return <button className={classes.pushButton}>{text}</button>;
 };
 
 export default Button;

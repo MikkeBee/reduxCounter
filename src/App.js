@@ -1,10 +1,15 @@
 import "./index.css";
 import Circle from "./components/Circle/Circle";
 import Button from "./components/Button/Button";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { selectCount } from "./features/counter/CounterSlice";
+import { increment } from "./features/counter/CounterSlice";
 
 const App = () => {
-  const count = useSelector((state) => state.counter.value);
+  // const count = useSelector((state) => state.counter.value);
+  // both product the same result
+  const count = useSelector(selectCount);
+  const dispatch = useDispatch();
 
   return (
     <div class="app">
@@ -13,7 +18,7 @@ const App = () => {
         <Button text={"Decrease 5"} />
         <Button text={"Decrease 1"} />
         <Button text={"Reset"} />
-        <Button text={"Increase 1"} />
+        <Button text={"Increase 1"} onClick={() => dispatch(increment())} />
         <Button text={"Increase 5"} />
       </div>
     </div>
