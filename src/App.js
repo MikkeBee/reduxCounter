@@ -18,9 +18,9 @@ const App = () => {
   const dispatch = useDispatch();
 
   return (
-    <div class="app">
+    <div className="app">
       <Circle count={count} />
-      <div class="buttonArea">
+      <div className="buttonArea">
         <Button
           text={"Decrease 5"}
           onClick={() => dispatch(decreaseByAmount(5))}
