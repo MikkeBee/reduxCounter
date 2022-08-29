@@ -9,4 +9,5 @@
 
 .pushButton:hover {
   background-color: rgb(134, 134, 244);
+  box-shadow: 0 0 10px rgb(20, 20, 125);
 }
