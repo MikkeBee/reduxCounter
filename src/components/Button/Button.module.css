@@ -1,0 +1,12 @@
+.pushButton {
+  width: 13rem;
+  height: 3rem;
+  background-color: rgb(149, 149, 255);
+  border-radius: 5px;
+  color: white;
+  margin: 1rem;
+}
+
+.pushButton:hover {
+  background-color: rgb(134, 134, 244);
+}
